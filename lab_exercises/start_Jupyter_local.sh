@@ -1,1 +1,8 @@
-PYSPARK_PYTHON=/lustre/sw/anaconda/anaconda3-5.1.0/bin/python3 PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS="notebook --ip=0.0.0.0 --allow-root" $HOME/spark-2.4.0-bin-hadoop2.7/bin/pyspark --master spark://$1:7077 
+You might need to do the following steps:
+
+#We're setting up an environment variable for the Spark installation directoYou might need to do the following steps:
+#(replace **[INSTALLATION_PATH]** below with the path of your installation):
+#export SPARK_HOME=[INSTALLATION_PATH]/spark-3.2.1-bin-hadoop3.2
+#export PATH=$PATH:$SPARK_HOME/bin
+
+PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS="notebook" pyspark
