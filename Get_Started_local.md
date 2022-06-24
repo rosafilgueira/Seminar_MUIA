@@ -94,7 +94,7 @@ On Windows, especially if you do not have Java and Python, it is easier to use t
 1. Change into the docker directory within the cloned repository and follow the [instructions](docker/) to build and run the Dockerfile.
       ```
       cd Seminar_MUIA/docker
-      docker build -t prace_spark_course .
+      docker build -t muia_spark_course .
       ./start_docker.sh
       ```
 
