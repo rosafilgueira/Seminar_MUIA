@@ -13,7 +13,7 @@ On Windows, especially if you do not have Java and Python, it is easier to use t
 
 ### Prerequisites
 
-* Java 8+
+* Java 10 or 11
 * Python 3
 * Recommended: Anaconda
 
@@ -22,7 +22,7 @@ On Windows, especially if you do not have Java and Python, it is easier to use t
 1. Get the latest release from the [Apache Spark downloads page](https://spark.apache.org/downloads.html) and unpack it.
 1. That's it - check that it works:
       ```
-      cd spark-2.4.4-bin-hadoop2.7/
+      cd spark-3.2.1-bin-hadoop3.2/
       bin/pyspark
       ```
 
@@ -30,22 +30,24 @@ On Windows, especially if you do not have Java and Python, it is easier to use t
 
       ```
       $ bin/pyspark 
-      Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
-      [Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+      Python 3.9.7 (default, Sep 16 2021, 08:50:36) 
+      [Clang 10.0.0 ] :: Anaconda, Inc. on darwin
       Type "help", "copyright", "credits" or "license" for more information.
-      19/11/01 09:11:45 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
       Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
       Setting default log level to "WARN".
       To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+      22/06/24 10:38:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
       Welcome to
-            ____              __
-           / __/__  ___ _____/ /__
-          _\ \/ _ \/ _ `/ __/  '_/
-         /__ / .__/\_,_/_/ /_/\_\   version 2.4.4
-            /_/
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /__ / .__/\_,_/_/ /_/\_\   version 3.2.1
+      /_/
 
-      Using Python version 3.7.4 (default, Aug 13 2019 15:17:50)
-      SparkSession available as 'spark'.
+     Using Python version 3.9.7 (default, Sep 16 2021 08:50:36)
+     Spark context Web UI available at http://192.168.68.109:4040
+     Spark context available as 'sc' (master = local[*], app id = local-1656063509672).
+     SparkSession available as 'spark'
       >>> 
       ```
 
@@ -53,53 +55,29 @@ On Windows, especially if you do not have Java and Python, it is easier to use t
 
 1. Clone the git repository on your laptop:
       ```
-      git clone https://github.com/EPCCed/prace-spark-for-data-scientists.git
+      git clone https://github.com/rosafilgueira/Seminar_MUIA.git
       ```
-1. We're setting up an environment variable for the Spark installation directory
+
+2. We're setting up an environment variable for the Spark installation directory
 (replace **[INSTALLATION_PATH]** below with the path of your installation):
       ```
-      export SPARK_HOME=[INSTALLATION_PATH]/spark-2.4.4-bin-hadoop2.7/
+      export SPARK_HOME=[INSTALLATION_PATH]/spark-3.2.1-bin-hadoop3.2
       ```
       You can also add PySpark (and other Spark binaries) to your path if you prefer:
       ```
       export PATH=$PATH:$SPARK_HOME/bin
       ```
-1. Configure the environment for PySpark to use Jupyter notebooks:
+3. Configure the environment for PySpark to use Jupyter notebooks:
       ```
       export PYSPARK_DRIVER_PYTHON=jupyter
       export PYSPARK_DRIVER_PYTHON_OPTS="notebook"
       ```
-1. Start PySpark with a Jupyter notebook server:
+4. Start PySpark with a Jupyter notebook server:
       ```
-      cd prace-spark-for-data-scientists
+      cd Seminar_MUIA
       $SPARK_HOME/bin/pyspark
       ```
 
-## Oracle VirtualBox VM
-
-### Prerequisites
-
-* Oracle VirtualBox (https://www.virtualbox.org)
-
-### Installation
-
-1. Download the VirtualBox VM image from [here](https://drive.google.com/open?id=1OHlNE8GAF8io2BMfRjAWQlZBogRil7JQ).
-1. Start VirtualBox and click File -> Import Appliance ... to import the image
-1. Start the VM
-1. Password for the SparkUser is "sparkuser"
-
-### Examples and lab exercises
-
-A copy of the git repository is available in the VM.
-
-Start a PySpark session:
-
-```
-cd prace-spark-for-data-scientists
-PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS=notebook pyspark
-```
-
-This opens a PySpark Jupyter session in a Firefox browser.
 
 ## Docker image
 
@@ -111,11 +89,11 @@ This opens a PySpark Jupyter session in a Firefox browser.
 
 1. Clone the git repository on your laptop:
       ```
-      git clone https://github.com/EPCCed/prace-spark-for-data-scientists.git
+      git clone https://github.com/EPCCed/Seminar_MUIA.git
       ```
 1. Change into the docker directory within the cloned repository and follow the [instructions](docker/) to build and run the Dockerfile.
       ```
-      cd prace-spark-for-data-scientists/docker
+      cd Seminar_MUIA/docker
       docker build -t prace_spark_course .
       ./start_docker.sh
       ```
@@ -127,7 +105,7 @@ A copy of the git repository is available in the Docker container.
 The command above starts a bash terminal session in the Docker container. You can now start Jupyter:
 
 ```
-cd prace-spark-for-data-scientists/docker
+cd Seminar_MUIA/docker
 ./pyspark_jupyter.sh
 ```
 
