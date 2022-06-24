@@ -1,4 +1,4 @@
-FROM openjdk:10-stretch
+FROM openjdk:11
 
 RUN apt-get update && apt-get install -y less vim git
 
