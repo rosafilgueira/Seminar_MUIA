@@ -89,7 +89,7 @@ On Windows, especially if you do not have Java and Python, it is easier to use t
 
 1. Clone the git repository on your laptop:
       ```
-      git clone https://github.com/EPCCed/Seminar_MUIA.git
+      git clone https://github.com/rosafilgueira/Seminar_MUIA.git
       ```
 1. Change into the docker directory within the cloned repository and follow the [instructions](docker/) to build and run the Dockerfile.
       ```
