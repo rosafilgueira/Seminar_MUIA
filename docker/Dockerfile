@@ -17,8 +17,8 @@ RUN chown ${USER}:${USER} ${HOME}/pyspark_jupyter.sh && chmod u+x ${HOME}/pyspar
 USER ${USER}
 WORKDIR ${HOME}
 
-ARG SPARK_VERSION=spark-3.3.0
-ARG SPARK_NAME=${SPARK_VERSION}-bin-hadoop3
+ARG SPARK_VERSION=spark-3.2.1
+ARG SPARK_NAME=${SPARK_VERSION}-bin-hadoop3.2
 ARG SPARK_DIST=${SPARK_NAME}.tgz
 ENV SPARK_HOME ${HOME}/${SPARK_NAME}
 
@@ -31,4 +31,4 @@ RUN mkdir downloads && \
     mv ${SPARK_DIST} downloads/ && \
     tar xzf downloads/${SPARK_DIST}
 
-RUN git clone https://github.com/EPCCed/prace-spark-for-data-scientists.git
+RUN git clone https://github.com/rosafilgueira/Seminar_MUIA.git
