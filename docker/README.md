@@ -2,7 +2,7 @@
 
 Build:
 ```
-docker build --pull --no-cache -t prace_spark_course .
+docker build --pull --no-cache -t muia_spark_course .
 ```
 
 When the image has been built succesfully, run an interactive container:
@@ -12,11 +12,13 @@ When the image has been built succesfully, run an interactive container:
 This starts a bash commandline session from a Linux or MacOS terminal.
 Or, if you are using a Windows PowerShell, use the following command to start an interactive session on the docker container:
 ```
-docker run -it -p 8000:8000 prace_spark_course /bin/bash
+docker run -it -p 8000:8000 muia_spark_course /bin/bash
 ```
 
 From within the container, start PySpark with a Jupyter notebook:
+
 ```
+conda activate
 ./pyspark_jupyter.sh
 ```
 
