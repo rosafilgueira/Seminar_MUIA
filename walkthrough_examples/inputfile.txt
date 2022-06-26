@@ -1,0 +1,5 @@
+this part is for beginners
+to learn spark and the difference
+between map and flatmap
+happy learning
+Enjoy
