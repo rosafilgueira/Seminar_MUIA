@@ -1,8 +1,8 @@
-FROM openjdk:11
+FROM --platform=linux/amd64 openjdk:11
 
 RUN apt-get update && apt-get install -y less vim git
 
-RUN wget --quiet https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh -O ~/anaconda.sh && \
+RUN wget --quiet https://repo.anaconda.com/archive/Anaconda3-5.3.1-Linux-x86_64.sh -O ~/anaconda.sh && \
     /bin/bash ~/anaconda.sh -b -p /opt/conda && \
     rm ~/anaconda.sh && \
     ln -s /opt/conda/etc/profile.d/conda.sh /etc/profile.d/conda.sh && \
@@ -23,8 +23,9 @@ ARG SPARK_DIST=${SPARK_NAME}.tgz
 ENV SPARK_HOME ${HOME}/${SPARK_NAME}
 
 RUN echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc
+
 RUN echo "\nexport SPARK_HOME=${SPARK_HOME}\nexport PATH=$PATH:${SPARK_HOME}/bin" >> ~/.bashrc
-RUN /opt/conda/bin/conda init
+
 
 RUN mkdir downloads && \
     wget --quiet https://www-eu.apache.org/dist/spark/${SPARK_VERSION}/${SPARK_DIST} && \
@@ -32,3 +33,4 @@ RUN mkdir downloads && \
     tar xzf downloads/${SPARK_DIST}
 
 RUN git clone https://github.com/rosafilgueira/Seminar_MUIA.git
+
