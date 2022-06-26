@@ -31,7 +31,8 @@
 
 | Time | Session |
 | :--- | ------------- |
-| 15:00 | Example application: [Analysing Volcanic Ash Advisories](../lab_exercises/Volcano_Analysis/Volcanic_Ash_Use_Case.pdf) |
-| 15:15 | Practical continued |
-| 16:45 | Wrap-up | 
+| 15:00 | Example of applications: [Analysing Volcanic Ash Advisories || Encyclopaedia Brittanica](Use_Case.pdf) |
+| 15:30 | Practical continued |
+| 16:30 | Defoe Spark-based ToolBox | 
+| 16:45 | Wrap-up |
 | 17:00 | Close |
