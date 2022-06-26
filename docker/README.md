@@ -18,7 +18,6 @@ docker run -it -p 8000:8000 muia_spark_course /bin/bash
 From within the container, start PySpark with a Jupyter notebook:
 
 ```
-conda activate
 ./pyspark_jupyter.sh
 ```
 
