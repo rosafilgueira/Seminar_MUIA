@@ -31,7 +31,7 @@
 
 | Time | Session |
 | :--- | ------------- |
-| 15:00 | Example of applications: [Analysing Volcanic Ash Advisories || Encyclopaedia Brittanica](Use_Case.pdf) |
+| 15:00 | Example of applications: [Analysing Volcanic Ash Advisories & Encyclopaedia Brittanica](Use_Case.pdf) |
 | 15:30 | Practical continued |
 | 16:30 | Defoe Spark-based ToolBox | 
 | 16:45 | Wrap-up |
