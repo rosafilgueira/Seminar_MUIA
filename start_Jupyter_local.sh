@@ -1,4 +1,4 @@
-You might need to do the following steps:
+#You might need to do the following steps:
 
 #We're setting up an environment variable for the Spark installation directoYou might need to do the following steps:
 #(replace **[INSTALLATION_PATH]** below with the path of your installation):
