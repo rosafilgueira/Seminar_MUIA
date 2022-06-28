@@ -84,7 +84,7 @@ On Windows, especially if you do not have Java and Python, it is easier to use t
       ```
       git clone https://github.com/rosafilgueira/Seminar_MUIA.git
       ```
-1. Change into the docker directory within the cloned repository and follow the [instructions](docker/) to build and run the Dockerfile.
+2. Change into the docker directory within the cloned repository and follow the [instructions](docker/) to build and run the Dockerfile.
       ```
       cd Seminar_MUIA/docker
       docker build -t muia_spark_course .
@@ -106,8 +106,14 @@ and access it from a browser (on the host machine i.e. your laptop) here: http:/
 
 ## Google Colab
 
-Go to "https://github.com/rosafilgueira/Seminar_MUIA/tree/main/Colab/Spark_Colab_InstallingPyspark.ipynb" in the web-browser.
+1. Clone the git repository on your laptop:
+      ```
+      git clone https://github.com/rosafilgueira/Seminar_MUIA.git
+      ```
+2. Upload Seminar_MUIA in your Google Drive 
 
-Change the domain from 'github.com' to 'githubtocolab.com'.
+3. Go to "https://github.com/rosafilgueira/Seminar_MUIA/tree/main/Colab/Spark_Colab_InstallingPyspark.ipynb" in the web-browser.
 
-Execute Everything
+4. Change the domain from 'github.com' to 'githubtocolab.com'.
+
+5. Execute Everything
