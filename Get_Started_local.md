@@ -4,7 +4,7 @@ If you'd like to run Spark on your own laptop there are three options:
 
 1. [Download and install Spark natively](#install-spark-natively)
 2. [Use a Docker container](#docker-image)
-
+3. [Use Google Colab](#Colab)
 On Linux-based systems (including MacOS) installation is straightforward.
 On Windows, especially if you do not have Java and Python, it is easier to use the provided VM or Docker image.
 
@@ -103,3 +103,17 @@ cd Seminar_MUIA/docker
 ```
 
 and access it from a browser (on the host machine i.e. your laptop) here: http://localhost:8000/
+
+## Google Colab
+
+Go to "https://github.com/rosafilgueira/Seminar_MUIA/tree/main/Colab" in the web-browser.
+
+Change the the domain from 'github.com' to 'githubtocolab.com'.
+
+## Google Colab
+
+Go to "https://github.com/rosafilgueira/Seminar_MUIA/tree/main/Colab/Spark_Colab_InstallingPyspark.ipynb" in the web-browser.
+
+Change the domain from 'github.com' to 'githubtocolab.com'.
+
+Execute Everything
