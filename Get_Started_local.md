@@ -110,7 +110,6 @@ and access it from a browser (on the host machine i.e. your laptop) here: http:/
       ```
       git clone https://github.com/rosafilgueira/Seminar_MUIA.git
       ```
-2. Upload Seminar_MUIA in your Google Drive 
 
 3. Go to "https://github.com/rosafilgueira/Seminar_MUIA/tree/main/Colab/Spark_Colab_InstallingPyspark.ipynb" in the web-browser.
 
