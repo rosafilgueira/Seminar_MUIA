@@ -66,17 +66,11 @@ On Windows, especially if you do not have Java and Python, it is easier to use t
       ```
       export PATH=$PATH:$SPARK_HOME/bin
       ```
-3. Configure the environment for PySpark to use Jupyter notebooks:
-      ```
-      export PYSPARK_DRIVER_PYTHON=jupyter
-      export PYSPARK_DRIVER_PYTHON_OPTS="notebook"
-      ```
-4. Start PySpark with a Jupyter notebook server:
+3. Enter in the directory Seminar_MUIA, and configure (see bellow) pyspark to use Jupyter notebook server:
       ```
       cd Seminar_MUIA
-      $SPARK_HOME/bin/pyspark
+      PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS="notebook" pyspark
       ```
-
 
 ## Docker image
 
