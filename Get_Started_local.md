@@ -106,12 +106,6 @@ and access it from a browser (on the host machine i.e. your laptop) here: http:/
 
 ## Google Colab
 
-Go to "https://github.com/rosafilgueira/Seminar_MUIA/tree/main/Colab" in the web-browser.
-
-Change the the domain from 'github.com' to 'githubtocolab.com'.
-
-## Google Colab
-
 Go to "https://github.com/rosafilgueira/Seminar_MUIA/tree/main/Colab/Spark_Colab_InstallingPyspark.ipynb" in the web-browser.
 
 Change the domain from 'github.com' to 'githubtocolab.com'.
