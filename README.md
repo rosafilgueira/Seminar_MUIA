@@ -8,4 +8,8 @@ Course materials for A Hands-On Introduction to Apache Spark and to its Programm
 * [walkthrough_examples](./walkthrough_examples/) contains a set of Jupyter notebooks with PySpark examples that you can walk through in your own time.
 * The lectures are included in [presentations](./presentations/) for reference.
 
+Important:
+
+We have just added the material in [Colab](./Colab). Therefore, lab_exercises and walkthrough_examples are available to be executed through Google colab.
+
 -----
